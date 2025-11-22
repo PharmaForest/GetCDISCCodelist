@@ -78,7 +78,7 @@ The macro generates the following outputs:
 ~~~
 <img width="968" height="464" alt="image" src="https://github.com/user-attachments/assets/c57e4acd-28ac-43b6-87f5-0d1d689a1160" />  
 
-<img width="778" height="446" alt="image" src="https://github.com/user-attachments/assets/8da62dda-f050-45c5-8fbc-14d9a2f7a08d" />
+<img width="389" height="223" alt="image" src="https://github.com/user-attachments/assets/8da62dda-f050-45c5-8fbc-14d9a2f7a08d" />
 
 ~~~sas
 %GetCDISCCodelist(codelistValue=DTYPE, standard=ADAM,cdiscapikey= xxxxxx);
