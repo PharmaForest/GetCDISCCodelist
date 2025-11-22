@@ -6,9 +6,9 @@ This SAS macro retrieves and filters CDISC Controlled Terminology (CT) codelists
 
 <img width="360" height="360" alt="GetCDISCCodelist_small" src="https://github.com/user-attachments/assets/38a5f3ed-49e1-47b8-bdb1-bf4a1243b0f4" />  
 
-Features
-Dynamic Version Fetching: Automatically fetches the latest version of Controlled Terminology (CT) if not specified.
-Multiple Standards Support: Supports multiple CDISC standards including SDTM, ADaM, CDASH, DEFINE-XML, SEND, and others.
-Flexible Filtering: Allows filtering by codelist ID or CodelistCode.
-Extensible Data: Flags if the codelist is extensible (i.e., if it supports additional terms beyond the official list).
-Error Handling: Provides detailed error messages if the provided codelist or standard is invalid.
+## Features
+  - Dynamic Version Fetching: Automatically fetches the latest version of Controlled Terminology (CT) if not specified.
+  - Multiple Standards Support: Supports multiple CDISC standards including SDTM, ADaM, CDASH, DEFINE-XML, SEND, and others.
+  - Flexible Filtering: Allows filtering by codelist ID or CodelistCode.
+  - Extensible Data: Flags if the codelist is extensible (i.e., if it supports additional terms beyond the official list).
+  - Error Handling: Provides detailed error messages if the provided codelist or standard is invalid.
