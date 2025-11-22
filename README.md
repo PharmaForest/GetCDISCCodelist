@@ -16,3 +16,48 @@ This SAS macro retrieves and filters CDISC Controlled Terminology (CT) codelists
 ## Prerequisites
 Before you can use this macro, make sure you have the following:
   - CDISC API Access: You will need an API Key for the CDISC API. If you don’t have one, you can obtain it from CDISC's website.
+
+## Syntax
+~~~sas
+%macro GetCDISCCodelist(
+    codelistValue=,  /* The codelist name (e.g., AGEU, PARAMCD) */
+    codelistType=ID,  /* Match by ID or CodelistCode */
+    standard=SDTM,  /* Default to SDTM */
+    version=%str(), /* Version of Controlled Terminology (empty to pull latest) */
+    outlib=WORK,/* Output Library */
+    cdiscapikey=  /*CDISC API key*/
+);
+~~~
+
+## Parameters
+#### codelistValue
+  - Required: Yes
+  - Type: Character
+  - Description: The name of the codelist (e.g., AGEU, PARAMCD, DTYPE).
+### codelistType
+  - Required: No
+  - Type: Character (ID or CodelistCode)
+  - Default: ID
+  - Description: Specify whether to filter by ID or CodelistCode. By default, the macro will filter by ID.
+### standard
+  - Required: No
+  - Type: Character
+  - Default: SDTM
+  - Description: The CDISC standard for which to retrieve the codelist. Valid values include:
+     - SDTM (default)
+    - ADAM
+CDASH
+DEFINE-XML
+SEND
+DDF
+GLOSSARY
+MRCT
+PROTOCOL
+QRS
+QS-FT
+TMF
+outlib
+Required: No
+Type: Library
+Default: WORK
+Description: The SAS library where the resulting datasets will be saved.
