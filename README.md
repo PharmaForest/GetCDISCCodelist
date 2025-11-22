@@ -12,3 +12,7 @@ This SAS macro retrieves and filters CDISC Controlled Terminology (CT) codelists
   - Flexible Filtering: Allows filtering by codelist ID or CodelistCode.
   - Extensible Data: Flags if the codelist is extensible (i.e., if it supports additional terms beyond the official list).
   - Error Handling: Provides detailed error messages if the provided codelist or standard is invalid.
+
+## Prerequisites
+Before you can use this macro, make sure you have the following:
+  - CDISC API Access: You will need an API Key for the CDISC API. If you don’t have one, you can obtain it from CDISC's website.
