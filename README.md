@@ -76,11 +76,14 @@ The macro generates the following outputs:
 ~~~sas
 %GetCDISCCodelist(codelistValue=ACN,cdiscapikey= xxxxx);
 ~~~
-<img width="484" height="232" alt="image" src="https://github.com/user-attachments/assets/c57e4acd-28ac-43b6-87f5-0d1d689a1160" />  
+<img width="968" height="464" alt="image" src="https://github.com/user-attachments/assets/c57e4acd-28ac-43b6-87f5-0d1d689a1160" />  
 
 <img width="778" height="446" alt="image" src="https://github.com/user-attachments/assets/8da62dda-f050-45c5-8fbc-14d9a2f7a08d" />
 
-
+~~~sas
+%GetCDISCCodelist(codelistValue=DTYPE, standard=ADAM,cdiscapikey= xxxxxx);
+~~~
+<img width="920" height="832" alt="image" src="https://github.com/user-attachments/assets/c067bfed-e338-47ca-93f2-9eee1cff62cc" />
 
 
 ## Conclusion
