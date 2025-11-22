@@ -30,7 +30,7 @@ Before you can use this macro, make sure you have the following:
 ~~~
 
 ## Parameters
-#### codelistValue
+### codelistValue
   - Required: Yes
   - Type: Character
   - Description: The name of the codelist (e.g., AGEU, PARAMCD, DTYPE).
@@ -46,18 +46,42 @@ Before you can use this macro, make sure you have the following:
   - Description: The CDISC standard for which to retrieve the codelist. Valid values include:
      - SDTM (default)
     - ADAM
-CDASH
-DEFINE-XML
-SEND
-DDF
-GLOSSARY
-MRCT
-PROTOCOL
-QRS
-QS-FT
-TMF
-outlib
-Required: No
-Type: Library
-Default: WORK
-Description: The SAS library where the resulting datasets will be saved.
+    - CDASH
+    - DEFINE-XML
+    - SEND
+    - DDF
+    - GLOSSARY
+    - MRCT
+    - PROTOCOL
+    - QRS
+    - QS-FT
+    - TMF
+### outlib
+  - Required: No
+  - Type: Library
+  - Default: WORK
+  - Description: The SAS library where the resulting datasets will be saved.
+### cdiscapikey
+  - Required: Yes
+  - Description: The SAS library where the resulting datasets will be saved.
+  - CDISC API key
+  - 
+## Output
+The macro generates the following outputs:  
+  - Merged Codelist Dataset: A dataset containing the codelist values and their associated terms.
+  - Extensibility Flag: If the codelist is extensible, the output dataset will include a flag indicating so.
+  - Filtered Codelists: The codelist is filtered based on the provided codelistValue and codelistType parameters.
+
+## Example_Usage
+~~~sas
+%GetCDISCCodelist(codelistValue=ACN,cdiscapikey= xxxxx);
+~~~
+<img width="484" height="232" alt="image" src="https://github.com/user-attachments/assets/c57e4acd-28ac-43b6-87f5-0d1d689a1160" />  
+
+<img width="778" height="446" alt="image" src="https://github.com/user-attachments/assets/8da62dda-f050-45c5-8fbc-14d9a2f7a08d" />
+
+
+
+
+## Conclusion
+This macro can be a very useful tool for fetching and working with CDISC Controlled Terminology (CT) codelists in your clinical trial datasets. If you have any questions or suggestions, feel free to reach out or create an issue in the GitHub repository.
